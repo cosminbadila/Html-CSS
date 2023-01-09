@@ -1,0 +1,88 @@
+body{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,103,1) 35%, rgba(0,212,255,1) 100%);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 100;
+font-size: 12px;
+line-height: 30px;
+
+}
+.container{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#contact input,
+#contact textarea,
+#contact button{
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+#contact{
+    background-color: aqua;
+    padding: 25px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(rgb(104, 50, 50), rgb(48, 63, 48), rgb(22, 22, 45), alpha);
+
+}
+#contact h3{
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+#contact h4{
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+#contact input,
+#contact textarea{
+    width: 85%;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+#contact textarea{
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+#contact button{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+#contact button:hover{
+   background-color: blue;
+
+}
+#contact button:active{
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+#contact input:valid,
+#contact textarea:valid{
+    border-color: rgb(26, 103, 23);
+}
+#contact input:invalid,
+#contact textarea:invalid{
+    border-color: red;
+}
+
+.note{
+    text-align: center;
+}
+input:required+span::after,
+textarea:required+span::after{
+    position:relative;
+    content: '(*)';
+}

@@ -1,0 +1,44 @@
+ul{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: blue;
+    text-align: center;
+}
+ul>li{
+    display: inline-block;
+    list-style: none;
+    padding: 15px;
+    
+}
+a{
+    color:white;
+    text-decoration: none;
+
+}
+li:hover, .active{
+    color: aqua;
+    background-color: brown;
+}
+ul>li ul.submeniu{
+    display: none;
+}
+ul>li:hover{
+    position: relative;
+}
+ul>li:hover ul.submeniu{
+    display: block;
+    width: 150px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.submeniu li{
+    display: inline-block;
+
+}
+.font{
+    font-style: italic;
+}

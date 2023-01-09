@@ -1,0 +1,21 @@
+table{
+    padding: 20px;
+    font-size: 30px;
+}
+tbody tr:nth-child(2n){
+    color: blueviolet;
+    background-color: rgb(134, 224, 224);
+}
+tbody tr:nth-child(2n+1){
+    color: rgb(165, 226, 43);
+    background-color: rgb(4, 39, 167);
+}
+tfoot tr:first-child{
+    color: rgb(13, 11, 11);
+    background-color: rgb(180, 34, 34);
+
+}
+tfoot tr:last-child{
+    color: yellow;
+    background-color: rgb(165, 99, 42);
+}
